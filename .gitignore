@@ -1,0 +1,47 @@
+# Data, eval sets, trained weights and caches never go into git
+data/
+
+models/
+ci-output/
+*.npy
+*.npz
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.joblib
+*.parquet
+*.zip
+
+# Test fixtures stay tracked, whatever their type
+!tests/fixtures/**
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# MLflow runs and Spark scratch
+mlruns/
+mlartifacts/
+spark-warehouse/
+metastore_db/
+derby.log
